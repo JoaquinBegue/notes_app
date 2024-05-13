@@ -4,7 +4,7 @@ import { ACCESS_TOKEN } from "./constants";
 apiUrl = "/choreo-apis/notesapp/backend/rest-api-be2/v1";
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : apiUrl
+  baseURL: import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : apiUrl,
 });
 
 api.interceptors.request.use(
